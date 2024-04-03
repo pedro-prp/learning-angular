@@ -5,6 +5,9 @@
   </form>
 </section>
 <section class="results">
-  <app-housing-location [houseLocation]="houseLocations">
+  <div *ngFor="let housingLocation of housingLocationList">
+    <app-housing-location
+    [houseLocation]="housingLocation">
   </app-housing-location>
+  </div>
 </section>
